@@ -1,0 +1,47 @@
+<div class="grid">
+    <div class="col-offset-1"></div>
+    <div class="col-11">
+        <h2>Nueva Alumno</h2>
+    </div>
+</div>
+
+<form [formGroup]="alumnoForm">
+    <div class="grid">
+        <div class="col-offset-1"></div>
+            <mat-form-field class="col-4">
+                <mat-label>Nombres</mat-label>
+                <input type="text" matInput placeholder="Nombres" formControlName="nombres">
+            </mat-form-field>
+            <mat-form-field class="col-4">
+                <mat-label>Apellidos</mat-label>
+                <input type="text" matInput placeholder="Apellidos" formControlName="apellidos">
+            </mat-form-field>
+            <mat-form-field class="col-2">
+                <mat-label>Edad</mat-label>
+                <input type="text" matInput placeholder="Edad" formControlName="edad">
+            </mat-form-field>
+    </div>
+    <div class="grid">
+        <div class="col-offset-1"></div>
+        <mat-form-field class="col-2">
+            <mat-label>Grado</mat-label>
+            <input type="text" matInput placeholder="Grado" formControlName="grado">
+        </mat-form-field>
+        <mat-form-field class="col-2">
+            <mat-label>Grupo</mat-label>
+            <input type="text" matInput placeholder="Grupo" formControlName="grupo">
+        </mat-form-field>
+        <mat-form-field class="col-2">
+            <mat-label>Turno</mat-label>
+            <input type="text" matInput placeholder="Turno" formControlName="turno">
+        </mat-form-field>
+    </div>
+        
+    <div class="grid">
+        <div class="col-offset-1"></div>
+          <div class="col-11">
+            <button mat-flat-button (click)="guardar()">Guardar</button>
+        </div>
+      </div>
+</form>
+

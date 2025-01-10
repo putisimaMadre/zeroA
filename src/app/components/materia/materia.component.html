@@ -1,0 +1,40 @@
+<div class="grid">
+    <div class="col-offset-1"></div>
+    <div class="col-11">
+        <h2>Nueva Materia</h2>
+    </div>
+</div>
+
+<form [formGroup]="materiaForm">
+    <div class="grid">
+        <div class="col-offset-1"></div>
+            <mat-form-field class="col-4">
+                <mat-label>Nombre</mat-label>
+                <input type="text" matInput placeholder="Nombre" formControlName="nombre">
+            </mat-form-field>
+            <mat-form-field class="col-2">
+                <mat-label>Grupo</mat-label>
+                <input type="text" matInput placeholder="Grupo" formControlName="grupo">
+            </mat-form-field>
+            <mat-form-field class="col-2">
+                <mat-label>Grado</mat-label>
+                <input type="text" matInput placeholder="Grado" formControlName="grado">
+            </mat-form-field>
+            <mat-form-field class="col-2">
+                <mat-label>Turno</mat-label>
+                <input type="text" matInput placeholder="Turno" formControlName="turno">
+            </mat-form-field>
+        <!--<div class="col-2">
+            <mat-form-field>
+                <mat-label>Concatenado</mat-label>
+                <input type="text" matInput placeholder="concatenado" formControlName="concatenado">
+            </mat-form-field>
+        </div>-->
+    </div>
+    <div class="grid">
+        <div class="col-offset-1"></div>
+          <div class="col-11">
+            <button mat-flat-button (click)="guardar()">Guardar</button>
+        </div>
+      </div>
+</form>

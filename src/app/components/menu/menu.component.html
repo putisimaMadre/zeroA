@@ -1,0 +1,28 @@
+<div class="grid">
+    <div class="col-offset-1"></div>
+    <div class="col-11">
+            <button mat-button [matMenuTriggerFor]="profesoresMenu">Profesores</button>
+            <mat-menu #profesoresMenu="matMenu" yPosition="above">
+            <button mat-menu-item routerLink="/profesor">Nuevo Profesor</button>
+            <button mat-menu-item>Item 2</button>
+            </mat-menu>
+
+            <button mat-button [matMenuTriggerFor]="materiasMenu">Materias</button>
+            <mat-menu #materiasMenu="matMenu" xPosition="before">
+            <button mat-menu-item routerLink="/materia">Nueva Materia</button>
+            <button mat-menu-item>Item 2</button>
+            </mat-menu>
+
+            <button mat-button [matMenuTriggerFor]="asignacionMenu">Asignación Profesores</button>
+            <mat-menu #asignacionMenu="matMenu" yPosition="below">
+            <button mat-menu-item routerLink="/profesor-materia">Nueva Asignación</button>
+            <button mat-menu-item>Item 2</button>
+            </mat-menu>
+
+            <button mat-button [matMenuTriggerFor]="alumnosMenu">Alumnos</button>
+            <mat-menu #alumnosMenu="matMenu" yPosition="below">
+            <button mat-menu-item routerLink="/alumno">Nuevo Alumno</button>
+            <button mat-menu-item>Item 2</button>
+            </mat-menu>
+    </div>
+</div>

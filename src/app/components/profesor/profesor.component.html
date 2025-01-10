@@ -1,0 +1,32 @@
+
+<div class="grid">
+    <div class="col-offset-1"></div>
+    <div class="col-11">
+        <h2>Datos Generales del Profesor</h2>
+    </div>
+</div>
+
+<form [formGroup]="profesorForm">
+    <div class="grid">
+        <div class="col-offset-1"></div>
+            <mat-form-field class="col-3">
+                <mat-label>Nombre</mat-label>
+                <input type="text" matInput placeholder="Nombre" formControlName="nombre">
+            </mat-form-field>
+            <mat-form-field class="col-2">
+                <mat-label>Telefono</mat-label>
+                <input type="text" matInput placeholder="telefono" formControlName="telefono">
+            </mat-form-field>
+            <mat-form-field class="col-2">
+                <mat-label>Edad</mat-label>
+                <input type="text" matInput placeholder="edad" formControlName="edad">
+            </mat-form-field>
+    </div>
+    
+    <div class="grid">
+        <div class="col-offset-1"></div>
+          <div class="col-11">
+            <button mat-flat-button (click)="guardar()">Guardar</button>
+        </div>
+      </div>
+</form>
