@@ -23,17 +23,33 @@
     </div>
     <div class="grid">
         <div class="col-offset-1"></div>
-        <mat-form-field class="col-2">
+        <!--<mat-form-field class="col-2">
             <mat-label>Grado</mat-label>
             <input type="text" matInput placeholder="Grado" formControlName="grado">
+        </mat-form-field>-->
+        <mat-form-field class="col-2">
+            <mat-label>Grado</mat-label>
+            <mat-select formControlName="grado">
+              @for (grado of grados; track grado) {
+                <mat-option [value]="grado">{{grado}}</mat-option>
+              }
+            </mat-select>
         </mat-form-field>
         <mat-form-field class="col-2">
             <mat-label>Grupo</mat-label>
-            <input type="text" matInput placeholder="Grupo" formControlName="grupo">
+            <mat-select formControlName="grupo">
+              @for (grupo of grupos; track grupo) {
+                <mat-option [value]="grupo">{{grupo}}</mat-option>
+              }
+            </mat-select>
         </mat-form-field>
         <mat-form-field class="col-2">
             <mat-label>Turno</mat-label>
-            <input type="text" matInput placeholder="Turno" formControlName="turno">
+            <mat-select formControlName="turno">
+              @for (turno of turnos; track turno) {
+                <mat-option [value]="turno">{{turno}}</mat-option>
+              }
+            </mat-select>
         </mat-form-field>
     </div>
         

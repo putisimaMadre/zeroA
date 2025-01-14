@@ -12,6 +12,7 @@ import { MaterialModule } from './material/material.module';
 import { provideHttpClient } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
 import { AlumnoComponent } from './components/alumno/alumno.component';
+import { AlumnoListComponent } from './components/alumno-list/alumno-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AlumnoComponent } from './components/alumno/alumno.component';
     MateriaComponent,
     ProfesorComponent,
     MenuComponent,
-    AlumnoComponent
+    AlumnoComponent,
+    AlumnoListComponent
   ],
   imports: [
     BrowserModule,

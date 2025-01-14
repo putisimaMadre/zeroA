@@ -14,7 +14,7 @@ urlEndPointGGT = "http://127.0.0.1:8000/api/busquedaGradoGrupoTurno"
 httpHeaders = new HttpHeaders({"Content-type":"Application/json"})
   constructor(private httpClient: HttpClient) { }
 
-  getMateria(): Observable<Materia[]>{
+  getMaterias(): Observable<Materia[]>{
     return this.httpClient.get<Materia[]>(this.urlEndPoint);
   }
 

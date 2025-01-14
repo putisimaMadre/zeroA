@@ -30,7 +30,7 @@ export class ProfesorMateriaComponent implements OnInit{
 
   ngOnInit(): void {
     this.profesorService.getProfesor().subscribe(profesor => this.profesores = profesor)
-    this.materiaService.getMateria().subscribe(materia => {
+    this.materiaService.getMaterias().subscribe(materia => {
       materia.forEach((materia)=>{
         this.mc = materia.nombre+"-"+materia.grado+"-"+materia.grupo+"-"+materia.turno
         this.materiaCompuesta.push({"id":materia.id, "materiaGG":this.mc})
